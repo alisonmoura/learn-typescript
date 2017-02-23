@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="out/Printer.js"></script>
+    </head>
+    <body>
+        <input type="text" id="msg">
+        <button type="button" onclick="new Printer().alert(document.getElementById('msg').value)">Alert this</button>
+        <button type="button" onclick="new Printer().log(document.getElementById('msg').value)">Log this</button>
+    </body>
+</html>
