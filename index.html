@@ -7,6 +7,10 @@
         <script src="out/Printer.js"></script>
     </head>
     <body>
+        <nav>
+            <a href="user.html">Users</a>
+        </nav>
+
         <input type="text" id="msg">
         <button type="button" onclick="new Printer().alert(document.getElementById('msg').value)">Alert this</button>
         <button type="button" onclick="new Printer().log(document.getElementById('msg').value)">Log this</button>

@@ -10,6 +10,7 @@
         "rootDir": "src"
     },
     "files": [
-        "src/Printer.ts"
+        "src/Printer.ts",
+        "src/UserController.ts"
     ]
 }

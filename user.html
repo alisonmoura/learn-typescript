@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>User</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="out/UserController.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+    <label for="inptName">Name:</label> <input type="text" id="inptName">
+    <label for="inptLogin">Login:</label> <input type="text" id="inptLogin">
+    <label for="inptPassword">Password:</label> <input type="password" id="inptPassword">
+    <br>
+    <input type="submit" value="Save" onclick="new UserController().save({name:document.getElementById('inptName').value, login:document.getElementById('inptLogin').value});">
+    <br>
+    <br>
+    <br>
+    <table id="userTable">
+        <thead>
+            <th>Name</th>
+            <th>Login</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Silver</td>
+                <td>johns</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
